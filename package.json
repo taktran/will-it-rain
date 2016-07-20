@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "lint": "semistandard",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "forecast": "node lib/forecast",
+    "forecast:dev": "DEBUG='WIR:*' node lib/forecast"
   },
   "author": "Tak Tran <contact@tutaktran.com>",
   "license": "MIT",
   "devDependencies": {
     "semistandard": "8.0.0"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "forecast-io": "1.0.2",
+    "moment": "2.14.1"
   }
 }
