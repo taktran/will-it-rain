@@ -1,0 +1,15 @@
+{
+  "name": "will-it-rain",
+  "version": "0.0.1",
+  "description": "Will it rain? A weather indicator using a neo-pixel light strip.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard",
+    "test": "npm run lint"
+  },
+  "author": "Tak Tran <contact@tutaktran.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "semistandard": "8.0.0"
+  }
+}
