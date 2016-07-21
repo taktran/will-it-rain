@@ -22,6 +22,9 @@ To set up:
 * Get a [forecast.io](https://developer.forecast.io/) api key
 * Set api key as `WIR_FORECASTIO_KEY` environment variable
 
-To run:
+To get forecasts (saved to `temp/london-weather-forecast.json`):
 
-    npm run forecast
+    npm run save-forecast
+
+    # With logging
+    npm run save-forecast:dev

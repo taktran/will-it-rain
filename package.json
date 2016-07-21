@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "semistandard",
     "test": "npm run lint",
-    "forecast": "node lib/forecast",
-    "forecast:dev": "DEBUG='WIR:*' node lib/forecast"
+    "save-forecast": "node lib/save-forecast",
+    "save-forecast:dev": "DEBUG='WIR:*' npm run save-forecast"
   },
   "author": "Tak Tran <contact@tutaktran.com>",
   "license": "MIT",
@@ -17,6 +17,7 @@
   "dependencies": {
     "debug": "2.2.0",
     "forecast-io": "1.0.2",
+    "jsonfile": "2.3.1",
     "moment": "2.14.1"
   }
 }
