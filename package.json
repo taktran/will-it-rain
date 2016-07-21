@@ -7,7 +7,8 @@
     "lint": "semistandard",
     "test": "npm run lint",
     "save-forecast": "node lib/save-forecast",
-    "save-forecast:dev": "DEBUG='WIR:*' npm run save-forecast"
+    "save-forecast:dev": "DEBUG='WIR:*' npm run save-forecast",
+    "read-forecast:dev": "DEBUG='WIR:*' node lib/read-forecast"
   },
   "author": "Tak Tran <contact@tutaktran.com>",
   "license": "MIT",
@@ -18,6 +19,7 @@
     "debug": "2.2.0",
     "forecast-io": "1.0.2",
     "jsonfile": "2.3.1",
-    "moment": "2.14.1"
+    "moment": "2.14.1",
+    "ramda": "0.21.0"
   }
 }

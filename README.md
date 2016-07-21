@@ -28,3 +28,7 @@ To get forecasts (saved to `temp/london-weather-forecast.json`):
 
     # With logging
     npm run save-forecast:dev
+
+To read forecasts
+
+    npm run read-forecast:dev
