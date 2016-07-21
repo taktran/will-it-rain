@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "semistandard",
     "test": "npm run lint",
-    "save-forecast": "node lib/save-forecast",
+    "save-forecast": "node lib/forecast/save-forecast",
     "save-forecast:dev": "DEBUG='WIR:*' npm run save-forecast",
-    "read-forecast:dev": "DEBUG='WIR:*' node lib/read-forecast"
+    "read-forecast:dev": "DEBUG='WIR:*' node lib/forecast/read-forecast"
   },
   "author": "Tak Tran <contact@tutaktran.com>",
   "license": "MIT",
