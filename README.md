@@ -1,5 +1,7 @@
 # will-it-rain
 
+[![CircleCI](https://circleci.com/gh/taktran/will-it-rain.svg?style=svg)](https://circleci.com/gh/taktran/will-it-rain)
+
 Will it rain? A weather indicator using a neo-pixel light strip.
 
 ## Development
