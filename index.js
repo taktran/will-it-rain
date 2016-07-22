@@ -8,7 +8,7 @@ const opts = {
   io: new Raspi()
 };
 
-const HourlyForecast = require('../forecast/hourly-forecast');
+const HourlyForecast = require('./lib/forecast/hourly-forecast');
 const forecastLights = require('./lib/lights/forecast-lights');
 
 const board = new five.Board(opts);
