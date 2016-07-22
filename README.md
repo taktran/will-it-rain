@@ -13,6 +13,22 @@ Will it rain? A weather indicator using a neo-pixel light strip.
 
         npm install
 
+### Testing
+
+To run tests
+
+    npm test
+
+To run tests while watching files
+
+* Install [nodemon](http://nodemon.io/) globally
+
+        npm install -g nodemon
+
+* Run
+
+        npm run test:watch
+
 ## Weather forecast
 
 The forecasts come from [forecast.io](https://forecast.io/).

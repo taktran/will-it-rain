@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "semistandard",
-    "test": "npm run lint",
+    "test:js": "tape lib/**/*.test.js | faucet",
+    "test": "npm run test:js && npm run lint",
+    "test:watch": "nodemon -x 'npm test --silent'",
     "save-forecast": "node lib/forecast/save-forecast",
     "save-forecast:dev": "DEBUG='WIR:*' npm run save-forecast",
     "read-forecast:dev": "DEBUG='WIR:*' node lib/forecast/read-forecast"
@@ -13,13 +15,20 @@
   "author": "Tak Tran <contact@tutaktran.com>",
   "license": "MIT",
   "devDependencies": {
-    "semistandard": "8.0.0"
+    "faucet": "0.0.1",
+    "semistandard": "8.0.0",
+    "tape": "4.6.0"
   },
   "dependencies": {
     "debug": "2.2.0",
     "forecast-io": "1.0.2",
     "jsonfile": "2.3.1",
     "moment": "2.14.1",
-    "ramda": "0.21.0"
+    "ramda": "0.21.0",
+    "johnny-five": "^0.9.59",
+    "node-pixel": "^0.6.1"
+  },
+  "optionalDependencies": {
+    "raspi-io": "^6.1.0"
   }
 }
